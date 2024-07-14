@@ -96,7 +96,9 @@ if not exist "%BOOST_SRC_DIR%" (
     if "!_checksum!" == "1" (
         echo %FILE_N% Using Boost backup
         powershell -Command "(New-Object System.Net.WebClient).DownloadFile('https://carla-releases.s3.us-east-005.backblazeb2.com/Backup/%BOOST_TEMP_FILE%', '%BOOST_TEMP_FILE_DIR%')"
+
         call :CheckSumEvaluate %BOOST_TEMP_FILE_DIR%,%BOOST_SHA256SUM%,_checksum
+
     )
     if "!_checksum!" == "1" goto error_download
     echo %FILE_N% Extracting boost from "%BOOST_TEMP_FILE%", this can take a while...

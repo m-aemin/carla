@@ -41,7 +41,10 @@ nav:
   - 'CarSIM': 'tuto_G_carsim_integration.md'
   - 'Chrono': 'tuto_G_chrono.md'
   - 'MathWorks': 'large_map_roadrunner.md'
+<<<<<<< HEAD
   - 'NVIDIA SimReady': 'ecosys_simready.md'
+=======
+>>>>>>> b23c01ae4a3bd3ec1501084db10f889d424cfadf
   - 'ASAM OpenDRIVE': 'adv_opendrive.md'
   - 'PTV Vissim': 'adv_ptv.md'
   - 'RSS': 'adv_rss.md'
